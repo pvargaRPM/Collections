@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "a259a704-a56c-45dd-932c-42104e61f11a",
+		"name": "OMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24486933"
+	},
+	"item": [
+		{
+			"name": "Shipment",
+			"item": [
+				{
+					"name": "Shipment Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{OMSToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/shipment/get?id=23590",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"shipment",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "23590"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

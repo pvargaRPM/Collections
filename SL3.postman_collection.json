@@ -1,0 +1,901 @@
+{
+	"info": {
+		"_postman_id": "8ba64a77-e57f-46bf-87c3-78b43fa1e481",
+		"name": "SL3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24486933"
+	},
+	"item": [
+		{
+			"name": "FileImport",
+			"item": [
+				{
+					"name": "SL3 Enqueue Import",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ImporterId",
+									"value": "275",
+									"type": "text"
+								},
+								{
+									"key": "UploadFile",
+									"description": "Insert a file to queue up for import",
+									"type": "file",
+									"src": "/C:/Users/DanielHawthorne-Foss/Downloads/TEST01_Portland ShortList.xlsx"
+								},
+								{
+									"key": "ImportType",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/fileImport/enqueue",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"fileImport",
+								"enqueue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FileImport List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hostname\": \"SL3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/fileimport/list",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"fileimport",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FileImport List Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Hostname\": \"SL3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/fileimport/list",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"fileimport",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FileImport Cancel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/fileimport/cancel",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"fileimport",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get FileImport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/fileimport/get?id=20390",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"fileimport",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "20390"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Importer",
+			"item": [
+				{
+					"name": "Importer Save",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 387,\r\n    \"ImporterType\": 3,\r\n    \"CreateDate\": \"2022-11-14T13:53:44.177\",\r\n    \"UpdateDate\": \"2022-11-14T15:21:04.523\",\r\n    \"CustomerId\": 134,\r\n    \"Name\": \"Philmporter\",\r\n    \"Deleted\": false,\r\n    \"MappingLastTestResult\": \"Result\",\r\n    \"ElapsedMappingTime\": \"00:00:00.0000100\",\r\n    \"Workbook\": \"PhilsWorkbook\",\r\n    \"DocumentColumns\": \"Col\",\r\n    \"TransferId\": null,\r\n    \"RecordArgument\": null,\r\n    \"ImporterObjectType\": 1,\r\n    \"TransactionSetNode\": null,\r\n    \"ActionIdentifier\": null,\r\n    \"Settings\": null,\r\n    \"NotificationEmails\": null,\r\n    \"EnableSummaryNotification\": true,\r\n    \"EnableErrorNotification\": true\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/importer/save",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"importer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Importer List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerId\": 134,\r\n    \"Search\": \"a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/importer/list",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"importer",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Importer Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 387\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/importer/delete",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"importer",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Importer Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/importer/get/?id=387",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"importer",
+								"get",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "387"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SL3 TestRun import file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ImporterId",
+									"value": "275",
+									"type": "text"
+								},
+								{
+									"key": "UploadFile",
+									"type": "file",
+									"src": "/C:/Users/DanielHawthorne-Foss/Downloads/TEST01_Portland ShortList.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/importer/testrun/",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"importer",
+								"testrun",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "External Controllers",
+			"item": [
+				{
+					"name": "OMS",
+					"item": [
+						{
+							"name": "List Orders",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "{{REACT_APP_RPM_API_KEY}}",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/api/oms/order/list",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"api",
+										"oms",
+										"order",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Shipment Statistics",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "{{REACT_APP_RPM_API_KEY}}",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseURL}}/api/oms/shipment/list/statistics",
+									"host": [
+										"{{BaseURL}}"
+									],
+									"path": [
+										"api",
+										"oms",
+										"shipment",
+										"list",
+										"statistics"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Script",
+			"item": [
+				{
+					"name": "Script List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/script/list",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"script",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Script Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/script/delete",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"script",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shipment",
+			"item": [
+				{
+					"name": "Shipment List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerId\": [168],\r\n    \"From\": \"2022-10-15T17:30:07.273\",\r\n    \"To\": \"2022-11-15T17:30:07.700\",\r\n    \"States\": [0],\r\n    \"UserId\": 775\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/shipment/list",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"shipment",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 234\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/shipment/delete",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"shipment",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/shipment/get?id=20373",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"shipment",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "20373"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment GetVisualTrackingItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/shipment/getVisualTrackingItems?id=20373",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"shipment",
+								"getVisualTrackingItems"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "20373"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "Location List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerId\": 2,\r\n    \"ConfirmBagOfVins\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/location/list",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"location",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{SL3Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerId\": 67,\r\n    \"ConfirmBagOfVins\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/location/get?id=8",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"location",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Location Bag of vins",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{SL3Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/location/isBagOfVins/111356",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"location",
+						"isBagOfVins",
+						"111356"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Location Bag of vins Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{SL3Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/location/get/?id=9",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"location",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

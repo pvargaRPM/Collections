@@ -1,0 +1,503 @@
+{
+	"id": "d068a062-0a83-441e-a01d-19858b4951a1",
+	"name": "RPM API",
+	"timestamp": "2023-11-21T13:27:43.051Z",
+	"collection_id": "31183957-728e7445-f80c-4e0b-9d88-9b34488d4d8c",
+	"folder_id": 0,
+	"environment_id": "31183957-fc7b8c7c-9448-410e-963f-fc177824f307",
+	"totalPass": 38,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-11-21T13:27:36.287Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "44c60b9b-afe7-49f3-9b73-90261e2fde5a",
+			"name": "Order - Get",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Order/190326",
+			"time": 1272,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"The id field is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The id field is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1272
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"The id field is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "191acc2c-28ac-45f7-bcb1-5ab96fd66c36",
+			"name": "Order - Document - Get",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Order/182806/document/proof_of_delivery",
+			"time": 1500,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1500
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f62d6042-4e5b-4598-b442-7247523aac5c",
+			"name": "Order - Create",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Order",
+			"time": 1073,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"The id field is a positive integer": true,
+				"Validate the deliveryLocation object": true,
+				"Verify the vehicles array is present and contains at least one element": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The id field is a positive integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the deliveryLocation object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the vehicles array is present and contains at least one element": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1073
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"The id field is a positive integer": true,
+					"Validate the deliveryLocation object": true,
+					"Verify the vehicles array is present and contains at least one element": true
+				}
+			]
+		},
+		{
+			"id": "c9c7c89d-ea0a-44cd-95ca-6cd68f98de6d",
+			"name": "Order - Delete",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Order/190645",
+			"time": 211,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 404": true,
+				"Response has an error message": true,
+				"Error message is not empty": true,
+				"Error message is a string": true,
+				"Error message is descriptive and provides useful information": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has an error message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is descriptive and provides useful information": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				211
+			],
+			"allTests": [
+				{
+					"Response status code is 404": true,
+					"Response has an error message": true,
+					"Error message is not empty": true,
+					"Error message is a string": true,
+					"Error message is descriptive and provides useful information": true
+				}
+			]
+		},
+		{
+			"id": "1671d2c3-0e43-4e71-8066-e5c60ed3f76f",
+			"name": "Webhook  Create",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Webhook/",
+			"time": 755,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"The 'id' field is a non-negative integer": true,
+				"Validate the 'url' field is a non-empty string": true,
+				"Verify that the 'secret' field is either null or a non-empty string": true,
+				"Verify that the includeSecretInHeader field is a boolean value": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 'id' field is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the 'url' field is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'secret' field is either null or a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the includeSecretInHeader field is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				755
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"The 'id' field is a non-negative integer": true,
+					"Validate the 'url' field is a non-empty string": true,
+					"Verify that the 'secret' field is either null or a non-empty string": true,
+					"Verify that the includeSecretInHeader field is a boolean value": true
+				}
+			]
+		},
+		{
+			"id": "dac51614-ab64-4390-b347-43508be7132d",
+			"name": "Webhook - Update",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Webhook/5",
+			"time": 168,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"URL is a non-empty string": true,
+				"Secret is a non-empty string": true,
+				"IncludeSecretInHeader is a boolean value": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"URL is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Secret is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IncludeSecretInHeader is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				168
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"URL is a non-empty string": true,
+					"Secret is a non-empty string": true,
+					"IncludeSecretInHeader is a boolean value": true
+				}
+			]
+		},
+		{
+			"id": "98a4f710-fffe-4ef0-8095-96b6054b37f5",
+			"name": "Webhook - Get",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Webhook",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"URL is a non-empty string": true,
+				"Secret is a non-empty string": false,
+				"IncludeSecretInHeader is a boolean value": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"URL is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Secret is a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"IncludeSecretInHeader is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				142
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"URL is a non-empty string": true,
+					"Secret is a non-empty string": false,
+					"IncludeSecretInHeader is a boolean value": true
+				}
+			]
+		},
+		{
+			"id": "ae36bf16-aadd-4604-96ba-3d2262b2b132",
+			"name": "Webhook - Ping",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//WebHook/1/ping",
+			"time": 369,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Id is a non-empty string": true,
+				"Delivery number is a non-negative integer": true,
+				"Webhook id is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Delivery number is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Webhook id is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				369
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Id is a non-empty string": true,
+					"Delivery number is a non-negative integer": true,
+					"Webhook id is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "336dbc16-31d6-403b-820b-15586804e026",
+			"name": "Quote",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Quote/90",
+			"time": 45,
+			"responseCode": {
+				"code": 404,
+				"name": "Resource Not Found"
+			},
+			"tests": {
+				"Response status code is 404": true,
+				"Verify that the 'statusCode' field is present in the response": true,
+				"Verify that the 'message' field is present in the response": true,
+				"Validate that the statusCode field is a non-zero integer": true,
+				"Validate that the message field is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'statusCode' field is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'message' field is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that the statusCode field is a non-zero integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that the message field is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Response status code is 404": true,
+					"Verify that the 'statusCode' field is present in the response": true,
+					"Verify that the 'message' field is present in the response": true,
+					"Validate that the statusCode field is a non-zero integer": true,
+					"Validate that the message field is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "0fd6ae15-802f-4bf6-b29c-cb2b1fbf5c7d",
+			"name": "Quote",
+			"url": " https://apim-rpm-api-stg.azure-api.net/v1//Quote/90",
+			"time": 146,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 404": true,
+				"Validate the response type field": true,
+				"Title field is not empty": true,
+				"Status field is a non-negative integer": true,
+				"TraceId field is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the response type field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Title field is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status field is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"TraceId field is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				146
+			],
+			"allTests": [
+				{
+					"Response status code is 404": true,
+					"Validate the response type field": true,
+					"Title field is not empty": true,
+					"Status field is a non-negative integer": true,
+					"TraceId field is not empty": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5681,
+	"collection": {
+		"requests": [
+			{
+				"id": "44c60b9b-afe7-49f3-9b73-90261e2fde5a",
+				"method": "GET"
+			},
+			{
+				"id": "191acc2c-28ac-45f7-bcb1-5ab96fd66c36",
+				"method": "GET"
+			},
+			{
+				"id": "f62d6042-4e5b-4598-b442-7247523aac5c",
+				"method": "POST"
+			},
+			{
+				"id": "c9c7c89d-ea0a-44cd-95ca-6cd68f98de6d",
+				"method": "DELETE"
+			},
+			{
+				"id": "1671d2c3-0e43-4e71-8066-e5c60ed3f76f",
+				"method": "POST"
+			},
+			{
+				"id": "dac51614-ab64-4390-b347-43508be7132d",
+				"method": "PUT"
+			},
+			{
+				"id": "98a4f710-fffe-4ef0-8095-96b6054b37f5",
+				"method": "GET"
+			},
+			{
+				"id": "ae36bf16-aadd-4604-96ba-3d2262b2b132",
+				"method": "POST"
+			},
+			{
+				"id": "336dbc16-31d6-403b-820b-15586804e026",
+				"method": "POST"
+			},
+			{
+				"id": "0fd6ae15-802f-4bf6-b29c-cb2b1fbf5c7d",
+				"method": "GET"
+			}
+		]
+	}
+}
