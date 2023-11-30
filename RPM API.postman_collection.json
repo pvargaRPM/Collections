@@ -2,10 +2,10 @@
 	"info": {
 		"_postman_id": "728e7445-f80c-4e0b-9d88-9b34488d4d8c",
 		"name": "RPM API",
-		"description": "PROD: [https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/)\n\nSTAGE: [https://apim-rpm-api-stg.azure-api.net/v1](https://apim-rpm-api-stg.azure-api.net/v1)\n\n  \n[Swagger UI (app-rpm-clean-orders-dev.azurewebsites.net)](https://app-rpm-clean-orders-dev.azurewebsites.net/swagger/index.html)",
+		"description": "PROD: [https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/)\n\nSTAGE: [https://apim-rpm-api-stg.azure-api.net/v1<br>](https://apim-rpm-api-stg.azure-api.net/v1)[RPM_Api | v1 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/v1#/Order%20Endpoints/Order-Document-Get)\n\n[Swagger UI (app-rpm-clean-orders-dev.azurewebsites.net)](https://app-rpm-clean-orders-dev.azurewebsites.net/swagger/index.html)\n\n[public-api | 2.2 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis-docs/RPMMoves/public-api/2.2#/)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "31183957",
-		"_collection_link": "https://dark-moon-492442.postman.co/workspace/211d4952-cf62-4586-9d20-87c20721463f/collection/31183957-728e7445-f80c-4e0b-9d88-9b34488d4d8c?action=share&source=collection_link&creator=31183957"
+		"_collection_link": "https://dark-moon-492442.postman.co/workspace/RPM-API~211d4952-cf62-4586-9d20-87c20721463f/collection/31183957-728e7445-f80c-4e0b-9d88-9b34488d4d8c?action=share&source=collection_link&creator=31183957"
 	},
 	"item": [
 		{
@@ -40,13 +40,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/Order/190326",
+					"raw": "{{URL}}/Order/204606",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"Order",
-						"190326"
+						"204606"
 					],
 					"query": [
 						{
@@ -61,6 +61,20 @@
 		},
 		{
 			"name": "Order - Document - Get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.expect(pm.response.code).to.equal(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [
@@ -71,22 +85,15 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/Order/182806/document/proof_of_delivery",
+					"raw": "{{URL}}/Order/295151/document/proof_of_delivery",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"Order",
-						"182806",
+						"295151",
 						"document",
 						"proof_of_delivery"
-					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
-						}
 					]
 				}
 			},
@@ -142,7 +149,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"vin\": \"2G2WR524551197583\",\r\n  \"year\": 2013,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Model 3\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"30 Joe Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"GA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-11-16T15:16:16.352Z\",\r\n    \"end\": \"2023-11-16T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-11-17T15:16:16.352Z\",\r\n    \"end\": \"2023-11-17T15:16:16.352Z\"\r\n  }\r\n}",
+					"raw": "{\r\n  \"vin\": \"5YJRE11B081000394\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-11-30T15:16:16.352Z\",\r\n    \"end\": \"2023-11-30T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-11-17T15:16:16.352Z\",\r\n    \"end\": \"2023-11-17T15:16:16.352Z\"\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -175,6 +182,18 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"// These are tests for when the Order is found for Delete = Successful Delete",
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"pm.test(\"The id field is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData.id).to.be.a('number').and.to.be.at.least(0);",
+							"});",
+							"",
+							"// These are tests for when the Order is not found for Delete",
 							"pm.test(\"Response status code is 404\", function () {",
 							"  pm.expect(pm.response.code).to.equal(404);",
 							"});",
@@ -222,13 +241,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/Order/190645",
+					"raw": "{{URL}}/Order/204041",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"Order",
-						"190645"
+						"204041"
 					],
 					"query": [
 						{
@@ -242,7 +261,7 @@
 			"response": []
 		},
 		{
-			"name": "Webhook  Create",
+			"name": "Webhook - Create",
 			"event": [
 				{
 					"listen": "test",
@@ -547,13 +566,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/WebHook/1/ping",
+					"raw": "{{URL}}/WebHook/4/ping",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"WebHook",
-						"1",
+						"4",
 						"ping"
 					],
 					"query": [
