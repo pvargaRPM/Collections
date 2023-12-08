@@ -1,11 +1,10 @@
 {
 	"info": {
-		"_postman_id": "728e7445-f80c-4e0b-9d88-9b34488d4d8c",
+		"_postman_id": "1ba3e930-e5e1-4114-aa93-fb0c32ea3c84",
 		"name": "RPM API",
-		"description": "PROD: [https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/)\n\nSTAGE: [https://apim-rpm-api-stg.azure-api.net/v1<br>](https://apim-rpm-api-stg.azure-api.net/v1)[RPM_Api | v1 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/v1#/Order%20Endpoints/Order-Document-Get)\n\n[Swagger UI (app-rpm-clean-orders-dev.azurewebsites.net)](https://app-rpm-clean-orders-dev.azurewebsites.net/swagger/index.html)\n\n[public-api | 2.2 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis-docs/RPMMoves/public-api/2.2#/)",
+		"description": "**PROD**:\n\n**STAGE**: [https://apim-rpm-api-stg.azure-api.net/v1](https://apim-rpm-api-stg.azure-api.net/v1)  \n\n**Swaggers:**[<br>](https://apim-rpm-api-stg.azure-api.net/v1)[RPM_Api | v1 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/v1#/Order%20Endpoints/Order-Document-Get)\n\n[https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/)\n\n[Swagger UI (app-rpm-clean-orders-dev.azurewebsites.net)](https://app-rpm-clean-orders-dev.azurewebsites.net/swagger/index.html)\n\n[public-api | 2.2 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis-docs/RPMMoves/public-api/2.2#/)\n\n**Production**\n\n- Old URL: [https://app.turvo.com/api/pub](https://protect-us.mimecast.com/s/VEnMCER26vTpZG1PHNmDwP?domain=app.turvo.com)\n- **New URL:** [<b>https://publicapi.turvo.com/v1</b>](https://protect-us.mimecast.com/s/M0ePCG62QxhAzlWgU77QXc?domain=publicapi.turvo.com)\n- Ocp-Apim-Subscription-Key: ??\n    \n\n**Test (Sandbox)**\n\n- Old URL: [https://my-sandbox.turvo.com/api/pub](https://protect-us.mimecast.com/s/dhItCJ627AhKjzpXUzSnpl?domain=my-sandbox.turvo.com)\n- **New URL:** [<b>https://my-sandbox-publicapi.turvo.com/v1</b>](https://protect-us.mimecast.com/s/alc0CKr25Bs4Rw8JFAHrEO?domain=my-sandbox-publicapi.turvo.com)\n- Ocp-Apim-Subscription-Key: fde19cd792314e4389d86ce50a883a7e\n    \n\n**Dev**\n\n- Old URL: ??\n    \n- **New URL:** [https://apim-rpm-api-dev.azure-api.net/v1](https://apim-rpm-api-dev.azure-api.net/v1)\n    \n- Ocp-Apim-Subscription-Key: 5b64a5fb04844ad89e3001d750f76e18",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31183957",
-		"_collection_link": "https://dark-moon-492442.postman.co/workspace/RPM-API~211d4952-cf62-4586-9d20-87c20721463f/collection/31183957-728e7445-f80c-4e0b-9d88-9b34488d4d8c?action=share&source=collection_link&creator=31183957"
+		"_exporter_id": "29370398"
 	},
 	"item": [
 		{
@@ -40,20 +39,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/Order/204606",
+					"raw": "{{URL}}/Order/215868",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"Order",
-						"204606"
-					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
-						}
+						"215868"
 					]
 				}
 			},
@@ -85,13 +77,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/Order/295151/document/proof_of_delivery",
+					"raw": "{{URL}}/Order/182806/document/proof_of_delivery",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"Order",
-						"295151",
+						"182806",
 						"document",
 						"proof_of_delivery"
 					]
@@ -100,7 +92,7 @@
 			"response": []
 		},
 		{
-			"name": "Order - Create",
+			"name": "Order - Create - Post",
 			"event": [
 				{
 					"listen": "test",
@@ -149,7 +141,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"vin\": \"5YJRE11B081000394\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-11-30T15:16:16.352Z\",\r\n    \"end\": \"2023-11-30T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-11-17T15:16:16.352Z\",\r\n    \"end\": \"2023-11-17T15:16:16.352Z\"\r\n  }\r\n}",
+					"raw": "{\r\n  \"vin\": \"5YJRE11B081000392\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-30T15:16:16.352Z\",\r\n    \"end\": \"2023-12-30T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-17T15:16:16.352Z\",\r\n    \"end\": \"2023-12-17T15:16:16.352Z\"\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -163,13 +155,76 @@
 					],
 					"path": [
 						"Order"
-					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order - Update - Put",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 201\", function () {",
+							"    pm.expect(pm.response.code).to.equal(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The id field is a positive integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.id).to.exist.and.to.be.a('number').and.to.be.greaterThan(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the deliveryLocation object\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.deliveryLocation).to.exist;",
+							"  pm.expect(responseData.deliveryLocation).to.be.an('object');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Verify the vehicles array is present and contains at least one element\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.vehicles).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fde19cd792314e4389d86ce50a883a7e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"5YJRE11B081000392\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe 2 Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-30T15:16:16.352Z\",\r\n    \"end\": \"2023-12-30T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-17T15:16:16.352Z\",\r\n    \"end\": \"2023-12-17T15:16:16.352Z\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/Order/215868",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"Order",
+						"215868"
 					]
 				}
 			},
@@ -261,6 +316,157 @@
 			"response": []
 		},
 		{
+			"name": "Webhook - Get (All)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"URL is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    pm.expect(responseData[0].url).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"URL should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Secret is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    responseData.forEach(function(item) {",
+							"        pm.expect(item.secret).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Secret should not be empty\");",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"IncludeSecretInHeader is a boolean value\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    responseData.forEach(function (webhook) {",
+							"        pm.expect(webhook.includeSecretInHeader).to.be.a('boolean');",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fde19cd792314e4389d86ce50a883a7e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"secret\": \"4321\",\r\n\t\"headerName\": \"secret-key\",\r\n\t\"includeSecretInheader\": true,\r\n\t\"events\": [\r\n    \"shipment_status_update\",\r\n\t\t\"order_cancelled\",\r\n\t\t\"order_updated\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/Webhook",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"Webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook - Get (by ID)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"URL is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    pm.expect(responseData[0].url).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"URL should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Secret is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    responseData.forEach(function(item) {",
+							"        pm.expect(item.secret).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Secret should not be empty\");",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"IncludeSecretInHeader is a boolean value\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    responseData.forEach(function (webhook) {",
+							"        pm.expect(webhook.includeSecretInHeader).to.be.a('boolean');",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fde19cd792314e4389d86ce50a883a7e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"secret\": \"4321\",\r\n\t\"headerName\": \"secret-key\",\r\n\t\"includeSecretInheader\": true,\r\n\t\"events\": [\r\n    \"shipment_status_update\",\r\n\t\t\"order_cancelled\",\r\n\t\t\"order_updated\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/Webhook/4",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"Webhook",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Webhook - Create",
 			"event": [
 				{
@@ -333,13 +539,6 @@
 					"path": [
 						"Webhook",
 						""
-					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
-						}
 					]
 				}
 			},
@@ -394,7 +593,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"secret\": \"4321\",\r\n\t\"headerName\": \"secret-key\",\r\n\t\"includeSecretInheader\": true,\r\n\t\"events\": [\r\n    \"shipment_status_update\",\r\n\t\t\"order_cancelled\",\r\n\t\t\"order_updated\"\r\n  ]\r\n}",
+					"raw": "{\r\n  \"secret\": \"7890\",\r\n\t\"headerName\": \"secret-key\",\r\n\t\"includeSecretInheader\": true,\r\n\t\"events\": [\r\n    \"shipment_status_update\",\r\n\t\t\"order_cancelled\",\r\n\t\t\"order_updated\"\r\n  ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -402,102 +601,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}/Webhook/5",
+					"raw": "{{URL}}/Webhook/16",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"Webhook",
-						"5"
-					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Webhook - Get",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Response status code is 200\", function () {",
-							"  pm.expect(pm.response.code).to.equal(200);",
-							"});",
-							"",
-							"",
-							"pm.test(\"URL is a non-empty string\", function () {",
-							"    const responseData = pm.response.json();",
-							"",
-							"    pm.expect(responseData).to.be.an('array');",
-							"    pm.expect(responseData[0].url).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"URL should not be empty\");",
-							"});",
-							"",
-							"",
-							"pm.test(\"Secret is a non-empty string\", function () {",
-							"    const responseData = pm.response.json();",
-							"    ",
-							"    pm.expect(responseData).to.be.an('array');",
-							"    responseData.forEach(function(item) {",
-							"        pm.expect(item.secret).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Secret should not be empty\");",
-							"    });",
-							"});",
-							"",
-							"",
-							"pm.test(\"IncludeSecretInHeader is a boolean value\", function () {",
-							"    const responseData = pm.response.json();",
-							"    ",
-							"    responseData.forEach(function (webhook) {",
-							"        pm.expect(webhook.includeSecretInHeader).to.be.a('boolean');",
-							"    });",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Ocp-Apim-Subscription-Key",
-						"value": "fde19cd792314e4389d86ce50a883a7e",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"secret\": \"4321\",\r\n\t\"headerName\": \"secret-key\",\r\n\t\"includeSecretInheader\": true,\r\n\t\"events\": [\r\n    \"shipment_status_update\",\r\n\t\t\"order_cancelled\",\r\n\t\t\"order_updated\"\r\n  ]\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{URL}}/Webhook",
-					"host": [
-						"{{URL}}"
-					],
-					"path": [
-						"Webhook"
-					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
-						}
+						"16"
 					]
 				}
 			},
@@ -566,21 +676,210 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}/WebHook/4/ping",
+					"raw": "{{URL}}/WebHook/16/ping",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"WebHook",
-						"4",
+						"16",
 						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WebHook-Validate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.id).to.exist;",
+							"    pm.expect(responseData.deliveryNumber).to.exist;",
+							"    pm.expect(responseData.webhookId).to.exist;",
+							"    pm.expect(responseData.payload).to.exist;",
+							"    pm.expect(responseData.responseStatusCode).to.exist;",
+							"    pm.expect(responseData.responseStatusMessage).to.exist;",
+							"    pm.expect(responseData.deliveryDate).to.exist;",
+							"});",
+							"",
+							"",
+							"pm.test(\"Id is a non-empty string\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.id).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Id should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Delivery number is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.deliveryNumber).to.be.a('number').and.to.be.at.least(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Webhook id is a non-negative integer\", function () {",
+							"  const responseData = pm.response.json();",
+							"",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.webhookId).to.be.a('number').and.to.be.at.least(0);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fde19cd792314e4389d86ce50a883a7e",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/WebHook/2/validate",
+					"host": [
+						"{{URL}}"
 					],
-					"query": [
-						{
-							"key": "Ocp-Apim-Subscription-Key",
-							"value": "fde19cd792314e4389d86ce50a883a7e",
-							"disabled": true
+					"path": [
+						"WebHook",
+						"2",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quote - Get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"URL is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    pm.expect(responseData[0].url).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"URL should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Secret is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    responseData.forEach(function(item) {",
+							"        pm.expect(item.secret).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Secret should not be empty\");",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"IncludeSecretInHeader is a boolean value\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    responseData.forEach(function (webhook) {",
+							"        pm.expect(webhook.includeSecretInHeader).to.be.a('boolean');",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fde19cd792314e4389d86ce50a883a7e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/Quote/182806",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"Quote",
+						"182806"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quote - Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fde19cd792314e4389d86ce50a883a7e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"string\",\r\n  \"year\": 0,\r\n  \"make\": \"string\",\r\n  \"model\": \"string\",\r\n  \"odometer\": 0,\r\n  \"numKeys\": 0,\r\n  \"originLocation\": {\r\n    \"streetAddress\": \"string\",\r\n    \"city\": \"string\",\r\n    \"state\": \"string\",\r\n    \"postalCode\": \"string\",\r\n    \"country\": \"string\"\r\n  },\r\n  \"pickupDate\": \"string\",\r\n  \"destinationLocation\": {\r\n    \"streetAddress\": \"string\",\r\n    \"city\": \"string\",\r\n    \"state\": \"string\",\r\n    \"postalCode\": \"string\",\r\n    \"country\": \"string\"\r\n  },\r\n  \"deliveryDate\": \"string\",\r\n  \"customReferenceIdentifers\": [\r\n    {\r\n      \"key\": \"string\",\r\n      \"value\": \"string\"\r\n    }\r\n  ],\r\n  \"notes\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/quote/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"quote",
+						""
 					]
 				}
 			},
