@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "1ba3e930-e5e1-4114-aa93-fb0c32ea3c84",
 		"name": "RPM API",
-		"description": "**PROD**:\n\n**STAGE**: [https://apim-rpm-api-stg.azure-api.net/v1](https://apim-rpm-api-stg.azure-api.net/v1)\n\n**Swaggers:**[](https://apim-rpm-api-stg.azure-api.net/v1)[RPM_Api | v1 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/v1#/Order%20Endpoints/Order-Document-Get)\n\n[https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/)\n\n[Swagger UI (app-rpm-clean-orders-dev.azurewebsites.net)](https://app-rpm-clean-orders-dev.azurewebsites.net/swagger/index.html)\n\n[public-api | 2.2 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis-docs/RPMMoves/public-api/2.2#/)\n\n**Production**\n\n- Old URL: [https://app.turvo.com/api/pub](https://protect-us.mimecast.com/s/VEnMCER26vTpZG1PHNmDwP?domain=app.turvo.com)\n- **New URL:** [<b>https://publicapi.turvo.com/v1</b>](https://protect-us.mimecast.com/s/M0ePCG62QxhAzlWgU77QXc?domain=publicapi.turvo.com)\n- Ocp-Apim-Subscription-Key: ??\n    \n\n**Test (Sandbox)**\n\n- Old URL: [https://my-sandbox.turvo.com/api/pub](https://protect-us.mimecast.com/s/dhItCJ627AhKjzpXUzSnpl?domain=my-sandbox.turvo.com)\n- **New URL:** [<b>https://my-sandbox-publicapi.turvo.com/v1</b>](https://protect-us.mimecast.com/s/alc0CKr25Bs4Rw8JFAHrEO?domain=my-sandbox-publicapi.turvo.com)\n- Ocp-Apim-Subscription-Key: fde19cd792314e4389d86ce50a883a7e\n    \n\n**Dev**\n\n- Old URL: ??\n- **New URL:** [https://apim-rpm-api-dev.azure-api.net/v1](https://apim-rpm-api-dev.azure-api.net/v1)\n- Ocp-Apim-Subscription-Key: 5b64a5fb04844ad89e3001d750f76e18\n    \n\n**OAuth Token:**  \n_Note: dev tokens work on prod as well_\n\n<img src=\"https://content.pstmn.io/5e5f6fcd-9ebc-406b-be6b-cefd0dc97a6a/aW1hZ2UucG5n\" alt=\"\" height=\"246\" width=\"446\">",
+		"description": "**PROD**:\n\n**STAGE**: [https://apim-rpm-api-stg.azure-api.net/v1](https://apim-rpm-api-stg.azure-api.net/v1)\n\n**Swaggers:**[](https://apim-rpm-api-stg.azure-api.net/v1)[RPM_Api | v1 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/v1#/Order%20Endpoints/Order-Document-Get)\n\n[https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/](https://app.swaggerhub.com/apis/RPMMoves/RPM_Api/)\n\n[Swagger UI (app-rpm-clean-orders-dev.azurewebsites.net)](https://app-rpm-clean-orders-dev.azurewebsites.net/swagger/index.html)\n\n[public-api | 2.2 | RPMMoves | SwaggerHub](https://app.swaggerhub.com/apis-docs/RPMMoves/public-api/2.2#/)\n\n**Production**\n\n- Old URL: [https://app.turvo.com/api/pub](https://protect-us.mimecast.com/s/VEnMCER26vTpZG1PHNmDwP?domain=app.turvo.com)\n- **New URL:** [<b>https://publicapi.turvo.com/v1</b>](https://protect-us.mimecast.com/s/M0ePCG62QxhAzlWgU77QXc?domain=publicapi.turvo.com)\n- Ocp-Apim-Subscription-Key: ??\n    \n\n**Test (Sandbox)**\n\n- Old URL: [https://my-sandbox.turvo.com/api/pub](https://protect-us.mimecast.com/s/dhItCJ627AhKjzpXUzSnpl?domain=my-sandbox.turvo.com)\n- **New URL:** [<b>https://my-sandbox-publicapi.turvo.com/v1</b>](https://protect-us.mimecast.com/s/alc0CKr25Bs4Rw8JFAHrEO?domain=my-sandbox-publicapi.turvo.com)\n- Ocp-Apim-Subscription-Key: fde19cd792314e4389d86ce50a883a7e\n    \n\n**Dev**\n\n- Old URL: ??\n- **New URL:** [https://apim-rpm-api-dev.azure-api.net/v1](https://apim-rpm-api-dev.azure-api.net/v1)\n- Ocp-Apim-Subscription-Key: 5b64a5fb04844ad89e3001d750f76e18\n    \n\n**OAuth Token:**  \n_Note: dev tokens work on prod as well_\n\n<img src=\"https://content.pstmn.io/5e5f6fcd-9ebc-406b-be6b-cefd0dc97a6a/aW1hZ2UucG5n\" width=\"446\" height=\"246\">\n\nThis Postman Collection: [https://github.com/pvargaRPM/Collections/blob/main/RPM%20API.postman_collection.json](https://github.com/pvargaRPM/Collections/blob/main/RPM%20API.postman_collection.json)\n\nStage Environment: [https://github.com/pvargaRPM/Collections/blob/main/RPM%20API.Stage.postman_environment.json](https://github.com/pvargaRPM/Collections/blob/main/RPM%20API.Stage.postman_environment.json)\n\nDEV Environment: [https://github.com/pvargaRPM/Collections/blob/main/RPM%20API.Dev.postman_environment.json](https://github.com/pvargaRPM/Collections/blob/main/RPM%20API.Dev.postman_environment.json)  \n  \n\n\\----- ADD BELOW CODE TO HERE (?): -----  \n[https://github.com/loadrpm/RpmApi/blob/main/.pipelines/azure-pipelines.yaml](https://github.com/loadrpm/RpmApi/blob/main/.pipelines/azure-pipelines.yaml)\n\n\\---- PIPELINE CODE ----  \npool:  \nvmImage: 'windows-latest'steps:  \n\\- script: |  \npowershell.exe -NoProfile -InputFormat None -ExecutionPolicy AllSigned -Command \"\\[System.Net.ServicePointManager\\]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('[https://dl-cli.pstmn.io/install/win64.ps1'))](https://dl-cli.pstmn.io/install/win64.ps1')))\"  \ndisplayName: 'Install Postman CLI'  \n\\- task: CmdLine@2  \ndisplayName: 'Run automated API tests using Postman CLI'  \ninputs:  \nscript: |  \npostman login --with-api-key $(POSTMAN_API_KEY)  \n\\# Run your collection using Postman CLI  \npostman collection run \"29370398-1ba3e930-e5e1-4114-aa93-fb0c32ea3c84\" -e \"29370398-6907c406-89a2-4d50-9073-feb0eefc30cc\"",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "29370398"
 	},
@@ -745,11 +745,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"/*\r",
 							"pm.test(\"Response status code is 200\", function () {\r",
 							"    pm.expect(pm.response.code).to.equal(200);\r",
 							"});\r",
+							"*/\r",
 							"\r",
-							"/*\r",
 							"pm.test(\"Response status code is 400\", function () {\r",
 							"    pm.expect(pm.response.code).to.equal(400);\r",
 							"    const responseData = pm.response.json();\r",
@@ -757,7 +758,7 @@
 							"    pm.expect(responseData).to.be.an('object');\r",
 							"    pm.expect(responseData.errorMessage).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"Could not retrieve document of type proof_of_delivery for order id\");\r",
 							"});\r",
-							"*/\r",
+							"\r",
 							"\r",
 							"postman.setNextRequest(null);"
 						],
