@@ -493,7 +493,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"function randomVIN(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ') {\r",
+							"function randomVIN(minValue, maxValue, dataSet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ') {\r",
 							"    if (!minValue) {\r",
 							"        minValue = 17;\r",
 							"        maxValue = 17;\r",
@@ -528,7 +528,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"vin\": \"{{randomVIN}}\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"notes\": \"Pickup Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-30T15:16:16.352Z\",\r\n    \"end\": \"2023-12-30T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"notes\": \"Delivery Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-17T15:16:16.352Z\",\r\n    \"end\": \"2023-12-17T15:16:16.352Z\"\r\n  }\r\n}",
+					"raw": "{\r\n  \"vin\": \"{{randomVIN}}\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"notes\": \"Pickup Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2024-01-25T15:16:16.352Z\",\r\n    \"end\": \"2024-01-25T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"notes\": \"Delivery Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2024-01-30T15:16:16.352Z\",\r\n    \"end\": \"2024-01-30T15:16:16.352Z\"\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -646,7 +646,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"vin\": \"5YJRE11B081000392\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"notes\": \"Pickup Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe 2 Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-30T15:16:16.352Z\",\r\n    \"end\": \"2023-12-30T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"notes\": \"Delivery Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2023-12-17T15:16:16.352Z\",\r\n    \"end\": \"2023-12-17T15:16:16.352Z\"\r\n  }\r\n}",
+					"raw": "{\r\n  \"vin\": \"5YJRE11B081000392\",\r\n  \"year\": 2008,\r\n  \"make\": \"TESLA\",\r\n  \"model\": \"Roadster\",\r\n  \"pickup\": {\r\n    \"locationName\": \"IAP PORT BRUNSWICK\",\r\n    \"notes\": \"Pickup Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"Joe 2 Frank Harris Blvd\",\r\n      \"city\": \"Brunswick\",\r\n      \"state\": \"MA\",\r\n      \"postalCode\": \"31523\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2024-01-27T15:16:16.352Z\",\r\n    \"end\": \"2024-01-27T15:16:16.352Z\"\r\n  },\r\n  \"delivery\": {\r\n    \"locationName\": \"10575 WEST SAM HOUSTON PRK\",\r\n    \"notes\": \"Delivery Notes\",\r\n    \"locationAddress\": {\r\n      \"streetAddress\": \"10575 WEST SAM HOUSTON PRK\",\r\n      \"city\": \"HOUSTON\",\r\n      \"state\": \"TX\",\r\n      \"postalCode\": \"77099\",\r\n      \"country\": \"United States\"\r\n    },\r\n    \"start\": \"2024-01-30T15:16:16.352Z\",\r\n    \"end\": \"2024-01-30T15:16:16.352Z\"\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
